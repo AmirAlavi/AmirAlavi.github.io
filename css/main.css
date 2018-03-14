@@ -1,3 +1,28 @@
-.navbar {
-    font-family:"Courier New", Courier, monospace;
+h1 {
+    font-size: 50px;
+    line-height: 70px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+body {
+    /* Background texture is from:
+    https://www.toptal.com/designers/subtlepatterns/crossword/ */
+    background-image: url('/assets/crossword.png');
+}
+
+.main-font {
+    font-family: 'Unica One', cursive;
+}
+
+.secondary-font, h1 {
+    font-family: 'Vollkorn', serif;
+    font-weight: 600;
+}
+
+.reading-font, p {
+    font-family: 'Vollkorn', serif;
 }

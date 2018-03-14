@@ -4,14 +4,12 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="jumbotron post">
+<div class="bg-light text-dark rounded">
   {{ content }}
 </div>
 
-<div class="page-content">
-	<div class="wrapper">
-		<div class="jubotron post">
+<!--<div class="page-content">
+	<div class="wrapper">-->
 			{% include github-comments.html %}
-		</div>
-	</div>
-</div>
+	<!--</div>
+</div>-->

@@ -31,7 +31,7 @@ function ShowComments(repo_name, comment_id, page_id)
             if (page_id == 1)
             {
                 var url = "https://github.com/" + repo_name + "/issues/" + comment_id + "#new_comment_field";
-                $("#gh-comments-list").append("<form action='" + url + "' rel='nofollow'> <input type='submit' value='Post a comment on Github' /> </form>");
+                $("#gh-comments-list").append("<form class='mb-3' action='" + url + "' rel='nofollow'> <button type='submit' class='btn btn-outline-primary main-font'>Post a comment on Github</button> </form>");
             }
 
             // Individual comments
@@ -39,15 +39,15 @@ function ShowComments(repo_name, comment_id, page_id)
 
                 var date = new Date(comment.created_at);
 
-                var t = "<div id='gh-comment'>";
-                t += "<img src='" + comment.user.avatar_url + "' width='24px'>";
-                t += "<b><a href='" + comment.user.html_url + "'>" + comment.user.login + "</a></b>";
-                t += " posted at ";
-                t += "<em>" + date.toUTCString() + "</em>";
-                t += "<div id='gh-comment-hr'></div>";
+                var t = "<div class='media border bg-light text-dark rounded' id='gh-comment'>";
+                t += "<img class='rounded-circle m-3' src='" + comment.user.avatar_url + "'' width='26px'>";
+                t += "<div class='media-body'>";
+                t += "<h5 class='mt-1 secondary-font'><a href='" + comment.user.html_url + "'>" + comment.user.login + "</a><small><i>" + "   " + date.toUTCString() + "</i></small></h5>";
                 t += comment.body_html;
                 t += "</div>";
+                t += "</div>";
                 $("#gh-comments-list").append(t);
+
             });
 
             // Call recursively if there are more pages to display
