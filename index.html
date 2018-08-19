@@ -5,4 +5,17 @@ title: Amir Alavi, Home
 <div class="blurb">
 	<h1>Welcome!</h1>
 	<p>This site is where I share my thoughts, opinions, and some of my work. Feel free to explore <a href="{{ "/blog" | absolute_url }}">Posts</a> and <a href="{{ "/about" | absolute_url }}">About</a>.</p>
+
+	<h2 class="secondary-font">Latest post</h2>
+	{% assign post = site.posts.first %}
+	<span class="reading-font">{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+	<br>
+	<h3 class="secondary-font" style="margin-top: 20px">Recent posts</h3>
+	<ul style="list-style: none; padding: 0; margin: 0">
+	  {% for post in site.posts offset:1 limit:2 %}
+	  <li><span class="reading-font">{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+
+	
 </div><!-- /.blurb -->
