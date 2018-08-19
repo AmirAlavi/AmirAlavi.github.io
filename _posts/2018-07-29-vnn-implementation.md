@@ -11,7 +11,7 @@ We are also interested in these VNN architectures for dimensionality reduction i
 
 So, if you are familiar with the basic multi-layer preceptron (MLP) network, you might have the question, "what do you do with the genes that don't have any protein-protein or protein-DNA interactions?" The answer is: nothing. You don't connect them. Thus, if you think of the layers of an MLP as fully connected (or "densley" connected, as many APIs such as Keras will call these layers), then a VNN has "sparsely" connected layers; a nueron in layer \\(n\\) is not necessarily connected to all neurons in layer \\(n+1\\), it will be connected to a subset.
 
-<img src="{{ "/assets/dense_vs_sparse.svg" | absolute_url }}" class="mx-auto d-block" alt="Densely connected vs sparsely connected neural network layers" max-width="100%"/>
+<img src="{{ "/assets/dense_vs_sparse.svg" | absolute_url }}" alt="Densely connected vs sparsely connected neural network layers"/>
 
 Assuming we have the prior knowledge and already know how many layers we want, and which nodes should be wired up to each other, how do we define this architecture in code? There's no *de facto* way to do this, and no library makes it easy. The key idea is to realize that with the sparsely connected layers, it's as if you take the weight matrix \\(\boldsymbol{W}\\) of a traditional dense layer, and have fixed some of the values in the matrix to always be zero.
 
