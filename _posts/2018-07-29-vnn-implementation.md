@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "scQuery: Using a VNN architecture"
+title: "Using a VNN architecture"
 date: 2018-07-29
 github_comments_issueid: "3"
+tags: scQuery deep-learning keras
 ---
 
 You may have heard of Visible Neural Network (VNN) architectures. These have been introduced and used by computational biologists to enable interpretation of the learned parameters of a neural network [<a href="#citation_1">1</a>]. These networks are usually constructed by using some sort of prior biological knowledge, and transforming that knowledge into a set of connections between neurons in different layers. For example, in the Lin et al. paper, they use protein-protein and protein-DNA interactions as their prior knowledge [<a href="#citation_2">2</a>]. Since each of the input neurons is a gene, the neurons in the first hidden layer can be nodes representing groups of interacting gene products. Thus, if two proteins interact with each other, then the input neurons representing the genes for those two proteins will be connected to the same neuron in the first hidden layer.
