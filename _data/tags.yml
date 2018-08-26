@@ -1,0 +1,6 @@
+scQuery:
+    color: primary
+deep-learning:
+    color: success
+keras:
+    color: danger
