@@ -2,4 +2,3 @@ name: Amir Alavi
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 github_comments_repository:  AmirAlavi/blog-comments
-include: tags
