@@ -28,7 +28,7 @@ This constructs an autoencoder with an input layer (Keras's built-in `Input` lay
 
 How does it work? It's actually very straightforward:
 
-<script src="https://gistit-minhhh.appspot.com/https://github.com/AmirAlavi/tied-autoencoder-keras/blob/master/tied_autoencoder_keras/autoencoders.py?footer=minimal&slice=68:90"></script>
+<script src="https://gistit-minhhh.appspot.com/https://github.com/AmirAlavi/tied-autoencoder-keras/blob/master/tied_autoencoder_keras/autoencoders.py?footer=minimal&slice=72:104"></script>
 
 As with any Keras Layer, the `call` function defines the forward propagation of our layer, and I've broken it up into the encode and decode portions (useful if you want to use your autoencoder to just encode some data after training). You can see within each of `encode` or `decode` that the layer has a list of kernels and biases, but only one set that is shared for both the encode and decode. In `decode`, the list of kernels is traversed in the opposite direction (and each is also transposed) (`biases2` are separate biases for the decode phase, since from what I've seen, weight-tying usually only applies to kernels, not biases).
 
