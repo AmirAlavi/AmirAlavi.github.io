@@ -31,7 +31,8 @@ function ShowComments(repo_name, comment_id, page_id)
             if (page_id == 1)
             {
                 var url = "https://github.com/" + repo_name + "/issues/" + comment_id + "#new_comment_field";
-                $("#gh-comments-list").append("<form class='mb-3' action='" + url + "' rel='nofollow'> <button type='submit' class='btn btn-outline-primary main-font'>Post a comment on Github</button> </form>");
+                $("#gh-comments-list").append("<form class='mb-3' action='" + url + "' rel='nofollow'> <button type='submit' class='btn btn-outline-primary main-font' data-toggle='tooltip' data-placement='right' title='Comment on the pre-created GitHub issue, and it will appear below'>Click to leave a comment</button> </form>");
+		$('[data-toggle="tooltip"]').tooltip();
             }
 
             // Individual comments
