@@ -26,3 +26,9 @@ body {
 .reading-font, p {
     font-family: 'Vollkorn', serif;
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}

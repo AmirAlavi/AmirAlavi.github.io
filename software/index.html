@@ -3,52 +3,88 @@ layout: default
 title: Software
 ---
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="row">
-	<div class="col">
-	  <div class="jumbotron p-4">
-	    <h3 class="secondary-font">sparsely-connected-keras</h3>
-	    <p class="lead">A new layer class for Keras models that allows static zero-weighted connections between neurons in adjacent layers (sparsely connecting layers instead of typical dense connections). Useful for VNN architectures.</p>
-	    <div class="btn-group" role="group" aria-label="Basic example">
-	      <a role="button" class="btn btn-primary" href="https://pypi.org/project/sparsely-connected-keras/">PyPI</a>
-	      <a role="button" class="btn btn-primary" href="https://github.com/AmirAlavi/sparsely-connected-keras">GitHub</a>
-	      <a role="button" class="btn btn-primary" href="{{ site.baseurl }}{% post_url 2018-07-29-vnn-implementation %}">Blog Post</a>
-	    </div><!-- btn-group -->
-	  </div><!-- jumbotron -->
-	</div><!-- col -->
-      </div><!-- row -->
-      
-      <div class="row">
-	<div class="col">
-	  <div class="jumbotron p-4">
-	    <h3 class="secondary-font">tied-autoencoder-keras</h3>
-	    <p class="lead">Autoencoder layer classes (with tied encode and decode weights) for Keras.</p>
-	    <div class="btn-group" role="group" aria-label="Basic example">
-	      <a role="button" class="btn btn-primary" href="https://pypi.org/project/tied-autoencoder-keras/">PyPI</a>
-	      <a role="button" class="btn btn-primary" href="https://github.com/AmirAlavi/tied-autoencoder-keras">GitHub</a>
-	      <a role="button" class="btn btn-primary" href="{{ site.baseurl }}{% post_url 2018-08-25-tied-autoencoders %}">Blog Post</a>
-	    </div><!-- btn-group -->
-	  </div><!-- jumbotron -->
-	</div><!-- col -->
-      </div><!-- row -->
-    </div><!-- col -->      
-    <div class="col">
-      <div class="container p-4">
-	<h2 class="secondary-font">Open source contributions</h2>
-	<ul class="reading-font">
-	  <li><span style="text-decoration: underline;">Keras</span> - Added code to prevent programming-error. The bug would result in hard-to-decipher error messages for users. With this fix, we catch this error much earlier, and provide an error message that plainly states the issue. Merged into <a href="https://github.com/keras-team/keras/releases/tag/2.2.0">Keras 2.2.0</a> (<a href="https://github.com/keras-team/keras/pull/10266">PR</a>)</li>
-	  <li><span style="text-decoration: underline;">Armatus</span> - Used detailed knowledge of C++11 STL to remove an unnecessary binary search through a std::map. (<a href="https://github.com/kingsfordgroup/armatus/pull/7">PR</a>)</li>
-	  <li><span style="text-decoration: underline;">Apple WebKit</span> (web engine used by Safari) - Discovered and fixed a bug with the storage of cookies from third party origins. Fixing this closes a potential cookie policy loophole, improving security. Resulted in the two bug reports below, and my patches for each:
-	    <ul>
-	      <li><a href="https://bugs.webkit.org/show_bug.cgi?id=158967">Bugzilla report 1</a></li>
-	      <li><a href="https://bugs.webkit.org/show_bug.cgi?id=159095">Bugzilla report 2</a></li>
-	    </ul>
-	  </li>
-	</ul>
-      </div><!-- container -->
-    </div><!-- col -->
-    
-    
-  </div><!-- outer row -->
+	<div class="row">
+		<div class="col">
+
+			<div class="row">
+				<div class="col">
+					<div class="jumbotron p-4">
+						<h3 class="secondary-font">scipr</h3>
+						<p class="lead">An extensible API for learning transformation functions to align batches of scRNA-seq data.</p>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<a role="button" class="btn btn-primary"
+								href="https://pypi.org/project/scipr/">PyPI</a>
+							<a role="button" class="btn btn-primary"
+								href="https://scipr.readthedocs.io">Docs</a>
+							<a role="button" class="btn btn-primary"
+								href="{{ site.baseurl }}{% post_url 2020-10-27-scipr %}">Blog Post</a>
+						</div><!-- btn-group -->
+					</div><!-- jumbotron -->
+				</div><!-- col -->
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="col">
+					<div class="jumbotron p-4">
+						<h3 class="secondary-font">sparsely-connected-keras</h3>
+						<p class="lead">A new layer class for Keras models that allows static zero-weighted connections
+							between neurons in adjacent layers (sparsely connecting layers instead of typical dense
+							connections). Useful for VNN architectures.</p>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<a role="button" class="btn btn-primary"
+								href="https://pypi.org/project/sparsely-connected-keras/">PyPI</a>
+							<a role="button" class="btn btn-primary"
+								href="https://github.com/AmirAlavi/sparsely-connected-keras">GitHub</a>
+							<a role="button" class="btn btn-primary"
+								href="{{ site.baseurl }}{% post_url 2018-07-29-vnn-implementation %}">Blog Post</a>
+						</div><!-- btn-group -->
+					</div><!-- jumbotron -->
+				</div><!-- col -->
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="col">
+					<div class="jumbotron p-4">
+						<h3 class="secondary-font">tied-autoencoder-keras</h3>
+						<p class="lead">Autoencoder layer classes (with tied encode and decode weights) for Keras.</p>
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<a role="button" class="btn btn-primary"
+								href="https://pypi.org/project/tied-autoencoder-keras/">PyPI</a>
+							<a role="button" class="btn btn-primary"
+								href="https://github.com/AmirAlavi/tied-autoencoder-keras">GitHub</a>
+							<a role="button" class="btn btn-primary"
+								href="{{ site.baseurl }}{% post_url 2018-08-25-tied-autoencoders %}">Blog Post</a>
+						</div><!-- btn-group -->
+					</div><!-- jumbotron -->
+				</div><!-- col -->
+			</div><!-- row -->
+		</div><!-- col -->
+
+		<div class="col">
+			<div class="container p-4">
+				<h2 class="secondary-font">Open source contributions</h2>
+				<ul class="reading-font">
+					<li><span style="text-decoration: underline;">Keras</span> - Added code to prevent
+						programming-error. The bug would result in hard-to-decipher error messages for users. With this
+						fix, we catch this error much earlier, and provide an error message that plainly states the
+						issue. Merged into <a href="https://github.com/keras-team/keras/releases/tag/2.2.0">Keras
+							2.2.0</a> (<a href="https://github.com/keras-team/keras/pull/10266">PR</a>)</li>
+					<li><span style="text-decoration: underline;">Armatus</span> - Used detailed knowledge of C++11 STL
+						to remove an unnecessary binary search through a std::map. (<a
+							href="https://github.com/kingsfordgroup/armatus/pull/7">PR</a>)</li>
+					<li><span style="text-decoration: underline;">Apple WebKit</span> (web engine used by Safari) -
+						Discovered and fixed a bug with the storage of cookies from third party origins. Fixing this
+						closes a potential cookie policy loophole, improving security. Resulted in the two bug reports
+						below, and my patches for each:
+						<ul>
+							<li><a href="https://bugs.webkit.org/show_bug.cgi?id=158967">Bugzilla report 1</a></li>
+							<li><a href="https://bugs.webkit.org/show_bug.cgi?id=159095">Bugzilla report 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- container -->
+		</div><!-- col -->
+
+
+	</div><!-- outer row -->
 </div><!-- container -->
