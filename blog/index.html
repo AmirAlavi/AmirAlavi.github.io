@@ -5,7 +5,7 @@ title: Blog posts
 <div class="container">
   <div class="row">
     <div class="col-8">
-      <h1>{{ page.title }}</h1>
+      <h2>{{ page.title }}</h2>
       <ul class="posts">
 	
 	{% for post in site.posts %}
@@ -20,7 +20,7 @@ title: Blog posts
       </ul>
     </div><!-- col-8 -->
     <div class="col border-left border-secondary">
-      <h2 class="secondary-font">By Tag</h2>
+      <h3 class="secondary-font">By Tag</h3>
       <ul style="list-style: none; padding: 0; margin: 0;">
       {% for tag in site.tags %}
       {% assign tagName = tag[0] %}
