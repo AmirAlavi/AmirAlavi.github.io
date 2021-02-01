@@ -1,8 +1,5 @@
 ---
-layout: post
 title: "A LaTeX template and build code for practical journal submissions"
-date: 2019-06-25
-github_comments_issueid: "7"
 tags: misc
 ---
 

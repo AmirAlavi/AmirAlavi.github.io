@@ -1,13 +1,12 @@
 ---
-layout: post
 title: "The adaptive immune system: the body's Guest Book"
-date: 2019-09-02
-github_comments_issueid: "8"
 tags: comp-bio
+mathjax: true
+toc: true
 ---
-<span style="color:Gray">
+
 In Summer 2019, I was a research intern at Microsoft Research's [Immunomics team](https://www.microsoft.com/en-us/research/project/immunomics/) in Redmond, WA. Working under Jonathan Carlson, the project was a collaboration with a Seattle-area biotech company called Adaptive Biotechnologies. The two companies were striving towards building something called the ["Antigen Map."](https://www.adaptivebiotech.com/technology-partners/) The goal of this blog post is to give you a high-level understanding of the computational biology problems in this setting.
-</span>
+{: .notice}
 
 Do you remember going to a hotel or a tourist destination and seeing a book that everyone would sign, usually their name, the date, and a little message, like “Amir was here!” or “Greetings from Michigan!”? They’re sometimes called **Guest Books**, or Autograph Books.
 
