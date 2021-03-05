@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Amir Alavi"
   avatar           : "/assets/images/headshot.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Computational Biology Ph.D. student. This site is where I share my thoughts, opinions, and some of my work."
+  bio              : "Computational Biology Ph.D. student. I post about machine learning and computational biology. Hello, is this thing on?"
   location         : "Pittsburgh, PA"
   email            :
   links:
